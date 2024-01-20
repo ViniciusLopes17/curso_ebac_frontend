@@ -20,19 +20,31 @@ h1, h2{
 }
 
 .container{
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     margin:  7.5rem auto;
-}
-
-.varx, .vary, #times{
-    margin: 0 auto;
-}
-
-#times, button{
+    height: 300px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+}
+
+.table{
+    display: flex;
+    height: 10em;
+    flex-direction: column;
+    justify-content: center;
+}
+form, #times{
+    display: flex;
+    height: 10em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.x, .y{
+    margin-top: 2em, auto;
 }
 
 .container button{
@@ -44,9 +56,10 @@ h1, h2{
 }
 
 form{
-    margin-top: 1.5rem;
+    margin-top: 2em;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .vary form{
@@ -59,3 +72,28 @@ input{
     padding: 0.5rem;
 }
 
+.container .success-message{
+    background-color: rgb(50, 241, 11);
+    color: #fff;
+    padding: 0.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 16px;
+    margin-left: 10.92em;
+}
+
+.container .failure-message{
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    padding: 0.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 16px;
+    margin-left: 10.92em;
+}

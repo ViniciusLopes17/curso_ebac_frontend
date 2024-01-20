@@ -9,21 +9,21 @@
 <body>
     <div class="container">
         <h1>Forms With JavaScript</h1>
-        <h2>Wich Var is Bigger</h2>
-        <div class="varx">
-            <form>
-                <input type="number">
-            </form>
+        <h2>Make A bigger Than B</h2>
+        <div class="table">
+            <form id="form">
+                <input id="va" class="x" type="number" required placeholder="Insert the Value of A">
+                <!-- Sinal de "versus" -->
+                <div id="times">
+                    &times;
+                </div>
+                <input id="vb" class="y" type="number" required
+                placeholder="Insert the Value of B">
+                <button type="submit" onclick="validarFormulario()">Click Me and Find Out!</button>
+            </form> 
         </div>
-            <div id="times">
-                &times;
-            </div>
-        <div class="vary">
-            <form>
-                <input type="text">
-            </form>
-        </div>
-        <button>Click Me and Find Out!</button>
+        <p class="failure-message"></p>
+        <p class="success-message"></p>
     </div>
     <script src="./main.js"></script>
 </body>
