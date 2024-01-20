@@ -15,21 +15,23 @@ form.addEventListener('submit', function(e){
     const messageSuccess = `You Rock! <b>${va.value}</b> is bigger than <b>${vb.value}</b>`
     const messageFailure = 'Too Bad :C, Try Again!';
     // const alertSuccess = messageSuccess
+    const alertFailure = document.querySelector('.failure-message')
+    const alertSuccess = document.querySelector('.success-message')
 
     if(validaForm(va.value, vb.value)){
         // alert(messageSuccess)
-        const alertSuccess = document.querySelector('.success-message');
         alertSuccess.innerHTML = messageSuccess;
         alertSuccess.style.display = 'flex';
+        alertFailure.style.display='none'
         document.getElementById('va').value = '';
         document.getElementById('vb').value = '';
 
 
     }else{
         // alert(messageFailure)
-        alertFailure = document.querySelector('.failure-message');
         alertFailure.innerHTML = messageFailure
         alertFailure.style.display='flex'
+        alertSuccess.style.display = 'none';
         document.getElementById('va').value = '';
         document.getElementById('vb').value = '';
     }
