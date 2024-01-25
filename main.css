@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(134deg, #df5555, #eb833e);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 6px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30%;
+    background: linear-gradient(134deg, #df5555, #eb833e);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 8px;
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.user-details .input-box input{
+    height: 45px;
+    margin-bottom: 8px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #eb833e;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(134deg, #df5555, #eb833e);
+    cursor: pointer;
+}
+form .button button:hover{
+    background: linear-gradient(134deg, #df5e5e, #e98d50);
+}
+
+@media(max-width: 584px){
+    .container{
+    max-width: 700px;
+    }
+    form .user-details .input-box{
+    width: 100%;
+    margin-bottom: 8px;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

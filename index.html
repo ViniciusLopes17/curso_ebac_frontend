@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cadastro</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Registration</h1>
+        </div>
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required name="name">
+                </div>
+                <div class="input-box">
+                    <span class="details">E-mail</span>
+                    <input type="email" placeholder="Enter your email" required name="email">
+                </div>
+                <div class="input-box">
+                    <span class="details">Telephone</span>
+                    <input id="tel" type="tel" placeholder="Enter your telephone" required name="tel">
+                </div>
+                <div class="input-box">
+                    <span class="details">CPF</span>
+                    <input id="cpf" type="text" placeholder="Enter your CPF" required name="cpf">
+                </div>
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <input type="text" placeholder="Enter your address" required name="address">
+                </div>
+                <div class="input-box">
+                    <span class="details">Zip Code</span>
+                    <input id="zip-code" type="text" placeholder="Enter your Zip Code" required name="zipcode">
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
